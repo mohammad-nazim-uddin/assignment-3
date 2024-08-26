@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- tailwind and daisy ui -->
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-     <!-- custom CSS -->
-     <link rel="stylesheet" href="style.css/style.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css/style.css" />
 
     <title>Document</title>
     <!-- font awesome -->
@@ -57,7 +57,9 @@
           </ul>
         </div>
         <!-- lg screen nav ber -->
-        <img class="bg-[#ABEF5F] p-2 mr-[-10px] rounded-full" src="assets/arrow-icon.svg" alt="">
+        <i
+          class="bg-[#ABEF5F] p-2 mr-[-10px] rounded-full rotate-45 fa-solid fa-arrow-up-long"
+        ></i>
         <a class="btn btn-ghost text-xl">Rinterio</a>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -70,31 +72,83 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <img src="assets/search-icon.svg" alt="" srcset="">
-        <img src="assets/shopping-cart-icon.svg" alt="" srcset="">
-        <a class="btn bg-[#ABEF5F] p-2 ">Book Consult</a>
+        <img src="assets/search-icon.svg" alt="" srcset="" />
+        <img src="assets/shopping-cart-icon.svg" alt="" srcset="" />
+        <a class="btn bg-[#ABEF5F] rounded-2xl"
+          >Book Consult
+          <i
+            class="bg-[#000000] text-white p-2 mr-[-10px] rounded-full rotate-45 fa-solid fa-arrow-up-long"
+          ></i>
+        </a>
       </div>
     </div>
 
-<!-- banner part -->
-    <div class="card bg-base-100 w-full shadow-xl">
+    <!-- banner part -->
+    <div class="card bg-base-100 w-full ">
       <figure class="px-10 pt-10">
-        <img
-          src="assets/banner.png"
-          alt="Home"
-          class="rounded-xl" />
+        <img src="assets/banner.png" alt="Home" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title">A barn house of this design has a striking appearance</h2>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <h2 class="card-title">
+          A barn house of this design has a striking appearance
+        </h2>
+        <p>
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
         <div class="card-actions">
-          <button class="btn rounded-3xl bg-[#c7f494] ">View Details
-            <img class="bg-[#ABEF5F] p-2 mr-[-10px] rounded-full" src="assets/arrow-icon.svg" alt="">
+          <button class="btn rounded-3xl bg-[#c7f494]">
+            View Details
+            <img
+              class="bg-[#ABEF5F] p-2 mr-[-10px] rounded-full"
+              src="assets/arrow-icon.svg"
+              alt=""
+            />
           </button>
-          
         </div>
       </div>
     </div>
 
+    <!-- About Us Section -->
+    
+    <div class="hero bg-base-200 min-h-screen mt-6">
+      <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+        <img
+          src="assets/Rectangle.png"
+          class="max-w-lg rounded-lg shadow-2xl w-6/12 h-3/5  "
+        />
+        <div class="w-6/12 h-2/4">
+          <img class="mr-[20px]" src="assets/Vector.png" alt="">
+          
+          <button class="rounded-3xl bg-white p-3">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            About us</button>
+          <h1 class="text-5xl font-bold">
+            We design thoughtful, liveable spaces!
+          </h1>
+          <p class="py-6">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- commercial -->
+          <div class="flex gap-6 bg-base-100 rounded-2xl p-6 mb-6">
+            <img src="assets/commercial.png" alt="" srcset="">
+            <div class="w-3/5">
+              <h2 class="font-bold">Commercial</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+          <!-- residential -->
+          <div class="flex gap-6 bg-base-100 rounded-2xl p-6">
+            <img src="assets/residential.png" alt="" srcset="">
+            <div class="w-3/5">
+              <h2 class="font-bold">Residential</h2>
+              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
