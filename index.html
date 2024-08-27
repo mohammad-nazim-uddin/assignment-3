@@ -26,36 +26,7 @@
   <body class="">
     <div class="navbar bg-base-200 p-10">
       <div class="navbar-start">
-        <!-- drop down(resposive) -->
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
+      
         <!-- lg screen nav ber -->
         <i
           class="bg-[#ABEF5F] p-2 mr-[-10px] rounded-full rotate-45 fa-solid fa-arrow-up-long"
@@ -71,7 +42,7 @@
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
+      <div class="navbar-end hidden lg:flex">
         <img class="border-2 rounded-box p-1 bg-base-100 mr-3" src="assets/search-icon.svg" alt="" srcset="" />
         <img class="border-2 rounded-box p-1 bg-base-100 mr-3" src="assets/shopping-cart-icon.svg" alt="" srcset="" />
         <a class="btn bg-[#ABEF5F] rounded-2xl"
@@ -80,6 +51,28 @@
             class="bg-[#000000] text-white p-2 mr-[-10px] rounded-full rotate-45 fa-solid fa-arrow-up-long"
           ></i>
         </a>
+      </div>
+
+      <!-- resoponsive nav -->
+      <div class="ml-48 lg:hidden">
+        
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars bg-base-100 border-2 rounded-full p-2">
+            </i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -113,13 +106,15 @@
     <!-- About Us Section -->
 
     <div class="hero bg-base-200 min-h-screen mt-6">
-      <div class="hero-content flex-col lg:flex-row-reverse gap-10">
+      <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-10">
         <img
           src="assets/Rectangle.png"
           class="max-w-lg rounded-lg shadow-2xl w-6/12 h-3/5"
         />
-        <div class="w-6/12 h-2/4">
+        <div class="text-center lg:text-left">
+         <div class="hidden lg:inline">
           <img class="ml-[-80px]" src="assets/Vector.png" alt="" />
+         </div>
 
           <button class="rounded-3xl bg-white p-3">
             <i class="fa-solid fa-arrow-right-long"></i>
